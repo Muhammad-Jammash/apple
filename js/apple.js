@@ -5,6 +5,8 @@ $(document).ready(function(){
         $('.close').addClass('active')
         $('#search').hide()
         $('#bag').hide()
+        $('#apple_logo').hide()
+
     })
      $('.close').click(function(){
         $('.item').removeClass('hide-item')
@@ -12,6 +14,7 @@ $(document).ready(function(){
         $('.close').removeClass('active')
         $('#search').show()
         $('#bag').show()
+        $('#apple_logo').show()
 
     })
 })
