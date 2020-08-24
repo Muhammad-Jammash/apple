@@ -17,4 +17,6 @@ $(document).ready(function(){
         $('#apple_logo').show()
 
     })
+   
+    
 })
