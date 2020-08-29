@@ -6,8 +6,8 @@ $(document).ready(function(){
         $('#search').hide()
         $('#bag').hide()
         $('#apple_logo').hide()
-
     })
+
      $('.close').click(function(){
         $('.item').removeClass('hide-item')
         $('.search-form').removeClass('active')
@@ -15,8 +15,11 @@ $(document).ready(function(){
         $('#search').show()
         $('#bag').show()
         $('#apple_logo').show()
-
     })
-   
-    
+    $('#toggle').click(function(){
+      $('.item').fadeToggle('hide')
+      $('.toggle_search').fadeToggle('hide')
+      $('.scale_up').fadeToggle("hide")
+      $('.bottom').fadeToggle('hide')
+    })
 })
