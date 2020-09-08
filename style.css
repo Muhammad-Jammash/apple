@@ -1,0 +1,587 @@
+@import url(//db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text);
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+nav {
+    height: 44px;
+    background: #000;
+}
+
+.menu {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    overflow: hidden;
+}
+
+.menu ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    list-style: none;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.menu ul li,
+.menu ul li a {
+    color: #fffffe;
+    line-height: 44px;
+    text-decoration: none;
+    max-width: 600px;
+    margin: auto;
+}
+
+.menu ul li {
+    padding: 0 20px;
+}
+
+.menu ul li a img {
+    height: 25px;
+    width: 22px;
+    margin-top: 7.5px;
+}
+
+.menu ul li .fa.fa-apple {
+    font-size: 20px;
+}
+
+.menu ul li a.item {
+    transform: scale(1);
+    transition: 0.5s;
+    display: block;
+}
+
+.menu ul li a.item.hide-item {
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.search-form {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 44px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.search-form.active {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.3s;
+}
+
+.search-form input {
+    width: 100%;
+    height: 44px;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.search-form::placeholder {
+    color: #fff;
+}
+
+.search-form:before {
+    content: '\f002';
+    position: absolute;
+    top: 12px;
+    left: -26px;
+    font-size: 18px;
+    color: #fff;
+    font-family: fontAwesome;
+}
+
+.close {
+    position: absolute;
+    background: #000;
+    width: 44px;
+    line-height: 44px;
+    right: 0;
+    top: 0;
+    color: #fff;
+    font-size: 18px;
+    text-align: right;
+    visibility: hidden;
+    opacity: 0;
+    width: 20px;
+    cursor: pointer;
+    z-index: auto;
+}
+
+.close.active {
+    opacity: 1;
+    visibility: visible;
+    right: 20%;
+    transition: 0.5s;
+}
+
+.toggle_menu a img {
+    display: none;
+}
+
+.toggle_search {
+    display: none;
+}
+.cancel{
+    display: none;
+}
+
+hr {
+    display: none;
+}
+
+.covid{
+    width: 100%;
+    height: 44px;
+    background-color: #0071e3;
+    text-align: center;
+}
+
+.covid p{
+    color: #fff;
+    display: block;
+    padding: 12px;
+    margin: 0;
+}
+
+.covid p a{
+    text-decoration: none;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+}
+.covid a:hover{
+    text-decoration: underline;
+    
+}
+
+.shop_online{
+    background-color: #fff;
+    height: 44px;
+    width: 100%;
+    text-align: center;
+}
+
+.shop_online p a{
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.shop_online p{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 14px;
+}
+
+.shop_online p a:hover{
+    text-decoration:underline;
+    text-decoration-color: #0066cc;
+}
+
+.SE_img a img{
+    width: 100%;
+    height: 664px;
+    margin: 0;
+    padding: 0;
+}
+
+.SE_img a .SE_heading h2{
+    position: absolute;    
+    text-decoration: none;
+    color: #fff;
+    top: 20%;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-size: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+.SE_img a .SE_heading h3{
+    position: absolute;
+    color: #fff;
+    top: 31%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    padding: 0 10px;
+    font-weight: lighter;
+}
+
+.SE_img a .SE_heading h4{
+    position: absolute;
+    color: gray;
+    top: 44%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 10px;
+}
+.SE_img .learn_SE{
+    position: absolute;
+    left: 43%;
+    top: 50%;
+    color: #0066cc;
+    text-align: center;
+    font-size: 20px;
+}
+.SE_img .learn_SE a{
+    color: #0066cc;
+    text-decoration: none;
+    margin-right: 7px;
+}
+.SE_img .learn_SE a:hover{
+    text-decoration: underline;
+    text-decoration-color: #0066cc;
+}
+
+.SE_img .buy_SE{
+    position: absolute;
+    right: 41%;
+    color: #0066cc;
+    text-decoration: none;
+    top: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.SE_img .buy_SE a{
+    text-decoration: none;
+    color: #0066cc;
+    margin-right: 7px;
+}
+.SE_img .buy_SE a:hover{
+    text-decoration: underline;
+    text-decoration-color: #0066cc;
+}
+
+.iphone_11{
+    position: relative;
+}
+
+.iphone_11 img{
+    width: 100%;
+    height: 664px;
+    margin: 0;
+    padding: 0;
+}
+.iphone_11 a .iphone_11_heading{
+    position: absolute;
+    color: #1d1d1f;
+    margin: auto;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.iphone_11 a .iphone_11_heading h2{
+    font-size: 50px;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.iphone_11 a .iphone_11_heading h3{
+    font-size: 30px;
+    margin: 0;
+    padding: 8px;
+    font-weight: lighter;
+}
+.iphone_11 a .iphone_11_heading h4{
+    font-size: 16px;
+    margin: 0;
+    padding: 7px;
+    font-weight: lighter;
+    color: grey;
+}
+.iphone_11 .learn_11{
+    position: absolute;
+    left: 43%;
+    top: 30%;
+    color: #0066cc;
+    text-align: center;
+    font-size: 20px;
+}
+.iphone_11 .learn_11 a{
+    color: #0066cc;
+    text-decoration: none;
+    margin-right: 7px;
+}
+.iphone_11 .learn_11 a:hover{
+    text-decoration: underline;
+    text-decoration-color: #0066cc;
+}
+
+.iphone_11 .buy_11{
+    position: absolute;
+    right: 42%;
+    color: #0066cc;
+    text-decoration: none;
+    top: 30%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.iphone_11 .buy_11 a{
+    text-decoration: none;
+    color: #0066cc;
+    margin-right: 7px;
+}
+.iphone_11 .buy_11 a:hover{
+    text-decoration: underline;
+    text-decoration-color: #0066cc;
+}
+
+.ipad_pro{
+    position: relative;
+}
+.ipad_pro img{
+    width: 100%;
+    height: 664px;
+    margin: 0;
+    padding: 0;
+}
+.ipad_pro a .ipadpro_heading{
+    position: absolute;
+    color: #1d1d1f;
+    margin: auto;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.ipad_pro a .ipadpro_heading h2{
+    font-size: 50px;
+    padding: 0 15px;
+    margin: 0;
+}
+
+.ipad_pro a .ipadpro_heading h3{
+    font-size: 28px;
+    margin: 0;
+    padding: 8px;
+    font-weight: lighter;
+}
+
+.ipad_pro .learn_ipad{
+    position: absolute;
+    left: 42%;
+    top: 25%;
+    color: #0066cc;
+    text-align: center;
+    font-size: 20px;
+}
+.ipad_pro .learn_ipad a{
+    color: #0066cc;
+    text-decoration: none;
+    margin-right: 7px;
+}
+.ipad_pro .learn_ipad a:hover{
+    text-decoration: underline;
+    text-decoration-color: #0066cc;
+}
+
+.ipad_pro .buy_ipad{
+    position: absolute;
+    right: 42%;
+    color: #0066cc;
+    text-decoration: none;
+    top: 25%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.ipad_pro .buy_ipad a{
+    text-decoration: none;
+    color: #0066cc;
+    margin-right: 7px;
+}
+.ipad_pro .buy_ipad a:hover{
+    text-decoration: underline;
+    text-decoration-color: #0066cc;
+}
+.mac_or_ipad{
+    position: relative;
+    width: 50%;
+    height: 664px;
+}
+
+.mac_or_ipad img{
+    height: 100%;
+    width: 100%;
+}
+.mac_or_ipad .mac_or_ipad_heading{
+    position: absolute;
+    color: #1d1d1f;
+    text-align: center;
+    top: 3%;
+    width: 50%;
+    padding: 0 60px;
+}
+.mac_or_ipad .mac_or_ipad_heading h2{
+    font-size: 40px;
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+    nav {}
+    .menu {}
+    .menu ul {
+        justify-content: space-around;
+        display: inline-block;
+        background: #000;
+        text-align: center;
+        top: 0;
+        z-index: 0;
+    }
+    .menu ul li a.item {
+        font-size: 16px;
+        color: #cccccb;
+        text-align: left;
+        margin-left: 80px;
+        margin: -7.5px 0;
+/*         padding: 0 10px; */
+    }
+    .menu ul li a.extra {
+        margin-bottom: 250px;
+    }
+    .toggle_menu a img {
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        z-index: 2;
+        margin: 7.5px;
+        left: 10px;
+        line-height: 44px;
+        cursor: pointer;
+    }
+    .toggle_search {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .toggle_search input {
+        height: 33px;
+        width: 85%;
+        padding: 0 10px;
+        border-radius: 8px;
+        color: #fff;
+        background-color: #1d1d1f;
+        opacity: 1;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .toggle_search input::placeholder {
+        color: #6e6e73;
+        font-weight: lighter;
+    }
+    
+/*
+    .cancel{
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        right: 0;
+        top: 52px;
+        font-size: 22px;
+        color: #2997ff;
+        
+    }
+*/
+    .close {
+        color: #fff;
+        top: 0;
+        visibility: visible;
+        font-size: 16px;
+        left: 0;
+        width: 44px;
+        background-color: #000;
+        margin: 2px;
+        position: absolute;
+    }
+    .menu ul li a.item.hide {
+        /* transform: scaleY(0); */
+        /* transition: 0.5s; */
+    }
+    .toggle_search.hide {
+        /* transform: scaleY(0); */
+    }
+    .scale_up.hide,
+    .bottom.hide {
+        /* transform: scaleY(0); */
+    }
+    .menu.hide {
+        /* transform: scaleY(0); */
+    }
+    #bag {
+        float: right;
+        top: 0;
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+        margin-top: 7.5px;
+        width: 20px;
+        height: 22px;
+    }
+    #search {
+        display: none;
+    }
+    hr {
+        display: block;
+        /* width: 600px; */
+        border: 1px solid #424245;
+        position: static;
+        /* max-width: 600px; */
+    }
+    hr.bottom {
+        width: 100%;
+    }
+}
+
+/*
+.covid a{
+		padding: 10px 0;
+		max-width: 285px;
+		margin: 0 auto;
+	}
+*/
+
+
+
+@media (max-width:1050px) {
+    .menu ul {
+        position: fixed;
+        justify-content: space-around;
+    }
+    .menu ul li a {
+        transform: none;
+    }
+}
