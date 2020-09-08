@@ -22,4 +22,5 @@ $(document).ready(function(){
       $('.scale_up').fadeToggle("hide")
       $('.bottom').fadeToggle('hide')
     })
+    
 })
